@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+h1, h3 {
+    color: rgb(13, 136, 136);
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+ul.grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-template-columns: repeat(2);
+    gap: 10px;
+    padding: 0;
+}
+
+/* ---------- LANGUAGE SECTION ---------- */
+
+.language-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+.language {
+  width: 250px;
+}
+
+
+.bars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+
+.bar {
+  width: 30%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 2px;
+}
+
+.bar.filled {
+  background-color: rgb(13, 136, 136);
+}
+
+
+
+a{
+  font-size: medium;
+}
+
+a:hover{
+  font-size: large;
+  background-color:rgb(171, 217, 204);
+  color:white;
+}
