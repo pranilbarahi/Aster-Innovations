@@ -10,6 +10,17 @@ h1, h3 {
     color: rgb(13, 136, 136);
 }
 
+.animated-text {
+    font-size: 40px;
+    background: linear-gradient(90deg, rgb(129, 63, 63), orange, rgb(144, 144, 83), green, blue, indigo, violet);
+    background-size:400% ; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientMove 3s ease infinite; /* animate infinitely */
+}
+
+
 p {
     color: rgb(0, 0, 0);
     font-size: 1rem;
@@ -17,12 +28,11 @@ p {
 }
 
 ul.grid-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    grid-template-columns: repeat(2);
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
     gap: 10px;
-    padding: 0;
+    padding: 10;
+    
 }
 
 /* ---------- LANGUAGE SECTION ---------- */
@@ -61,10 +71,55 @@ ul.grid-list {
 
 a{
   font-size: medium;
+  font-weight: bolder;
 }
 
 a:hover{
   font-size: large;
   background-color:rgb(171, 217, 204);
   color:white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbarCSS{
+
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: right;
+  align-items: center;
+  padding-right: 50px;
+
+  
+}
+
+.animated-bgCSS {
+    background: linear-gradient(90deg, rgb(129, 63, 63), rgb(109, 83, 35),
+     rgb(144, 144, 83), green, blue, indigo, rgb(163, 60, 163)
+     , rgb(122, 70, 161), rgb(4, 80, 163), rgb(103, 60, 163), rgb(24, 10, 227));
+    background-size: 1000% ; 
+    animation: gradientMove 10s ease infinite; /* animate infinitely */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
