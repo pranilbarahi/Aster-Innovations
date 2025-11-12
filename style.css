@@ -1,9 +1,16 @@
+*{
+ margin: 0px;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
     padding: 0;
     background-color: rgb(255, 255, 255);
+    height: 10000px;
+      overflow: hidden;
+
 }
 
 h1, h3 {
@@ -11,6 +18,8 @@ h1, h3 {
 }
 
 .animated-text {
+
+
     font-size: 40px;
     background: linear-gradient(90deg, rgb(129, 63, 63), orange, rgb(144, 144, 83), green, blue, indigo, violet);
     background-size:400% ; 
@@ -80,22 +89,23 @@ a:hover{
   color:white;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 .navbarCSS{
 
-  height: 50px;
+  height: 70px;
   display: flex;
   flex-direction: row;
-  gap: 50px;
   justify-content: right;
   align-items: center;
   padding-right: 50px;
-
+  position: sticky; /* Stick to the top when scrolling */
+  top: 0; /* Ensure it sticks to the top */
+  z-index: 1000; /* Stay on top of other content */
   
+}
+nav {
+  display: flex; 
+  gap: 20px; 
 }
 
 .animated-bgCSS {
@@ -103,7 +113,7 @@ body {
      rgb(144, 144, 83), green, blue, indigo, rgb(163, 60, 163)
      , rgb(122, 70, 161), rgb(4, 80, 163), rgb(103, 60, 163), rgb(24, 10, 227));
     background-size: 1000% ; 
-    animation: gradientMove 10s ease infinite; /* animate infinitely */
+    animation: gradientMove 8s ease infinite; /* animate infinitely */
 }
 
 @keyframes gradientMove {
@@ -123,3 +133,9 @@ body {
         background-position: 0% 50%;
     }
 }
+
+
+
+
+
+

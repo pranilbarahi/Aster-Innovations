@@ -1,0 +1,489 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .custom-3grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;  
+            gap: 0px; 
+             
+
+        }
+                .custom-2grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;  
+            gap: 0px;  
+
+        }
+        .bg-blue{
+            background-color: rgb(50, 108, 223);
+
+        }
+
+        .input-dark input{
+            border-color: black;
+        }
+
+        .inputunderborder{
+            border-color: transparent;
+            border-bottom: 1px solid black;
+        }
+
+
+        .flex-wrap-reverse {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        .rightside{
+            display: flex;
+            justify-content: center;
+        }
+            .group-of-studies-label {
+                font-size: 0.80rem;  /* Shrinks the font size to 0.75rem (smaller text) */
+                font-weight: 600;
+            }
+
+    </style>
+
+
+</head>
+<body >
+    <!-- header -->
+    <header class="bg-blue mb-3">
+        <div class=" d-flex justify-content-between px-5">
+            <img src="https://cdn.pixabay.com/photo/2015/05/22/19/01/business-779542_1280.jpg" 
+            alt="Logo"
+            width="50"
+            hright="50"
+            class="rounded"
+            >
+            <div>
+                <h1>
+                SQ Collegeiate
+                </h1>
+                <p>A Project of None</p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <form>
+        <div class="container shadow  rounded  p-4" >
+            
+            <!-- first section -->
+            <section class="row g-1">
+
+                <div class=" col-md-6 col-lg-4 col-xl-4 ">
+                    <div class="card shadow border-dark">
+                            <div class="card-header bg-blue text-white text-center ">
+                                ADMISSION FOR
+                            </div>
+                            <div class="row card-body d-flex flex-nowrap mb-3">
+                                <div class="col-6 custom-2grid">
+                                    <div>
+                                        <input type="radio" name="admission" id="IX">
+                                        <label for="IX">IX</label>
+                                    </div>
+                                        <div>
+                                        <input type="radio" name="admission" id="X">
+                                        <label for="X">X</label>
+                                    </div>
+                            
+                                
+                                    <div>
+                                        <input type="radio" name="admission" id="XI">
+                                        <label for="XI">XI</label>
+                                    </div>
+                                        <div>
+                                        <input type="radio" name="admission" id="CRASHCOURSE">
+                                        <label for="XII">XII</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div>
+                                        <input type="radio" name="admission2" id="OTHERCLASSES">
+                                        <label class="group-of-studies-label" for="OTHERCLASSES">OTHERCLASSES</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="admission2" id="REGULARCLASSES">
+                                        <label class="group-of-studies-label" for="REGULARCLASSES">REGULARCLASSES</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="admission2" id="CRASHCOURSE">
+                                        <label class="group-of-studies-label" for="CRASHCOURSE">CRASHCOURSE</label>
+                                    </div>
+
+
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-6 col-lg-4 col-xl-4 ">
+                    <div class="card shadow  border-dark ">
+                        <div class="card-header bg-blue text-white text-center ">
+                            GROUP OF STUDIES
+                        </div>
+                        <div class="row card-body d-flex flex-nowrap mb-2 mt-1   ">
+                            <div class="col">
+                                <div class="d-flex flex-nowrap">
+                                    <input type="radio" name="GOS" id="Bio">
+                                    <label class="group-of-studies-label" for="Bio" >Bio</label>
+                                </div>
+                                <div class="d-flex flex-nowrap">
+                                    <input type="radio" name="GOS" id="PreEngineering">
+                                    <label class="group-of-studies-label"  for="PreEngineering">Pre-Engineering</label>
+                                </div>
+                                <div class="d-flex flex-nowrap">
+                                    <input type="radio" name="GOS" id="PreMedical">
+                                    <label class="group-of-studies-label"  for="PreMedical">Pre-Medical</label>
+                                </div>
+                                <div class="d-flex flex-nowrap">
+                                    <input type="radio" name="GOS" id="ComputerScience">
+                                    <label class="group-of-studies-label"  for="ComputerScience">Computer-Science</label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="d-flex flex-nowrap">
+                                    <input type="radio" name="GOS" id="Commerce">
+                                    <label class="group-of-studies-label" for="Commerce">Commerce</label>
+                                </div>
+                                <div class="d-flex flex-nowrap">
+                                    <input type="radio" name="GOS" id="Humaniteis">
+                                    <label class="group-of-studies-label" for="Humaniteis">Humaniteis-(Arts)</label>
+                                </div>
+                                <div class="d-flex flex-nowrap">
+                                    <input type="radio" name="GOS" id="EnglishLanguage">
+                                    <label class="group-of-studies-label" for="EnglishLanguage">English-Language</label>
+                                </div>
+                                <div class="d-flex flex-nowrap">
+                                    <input type="radio" name="GOS" id="Other">
+                                    <label class="group-of-studies-label" for="Other">Other</label>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-6 col-lg-4  col-xl-4 mb-3 ">
+                    <div class="card shadow  border-dark  ">
+                    <div class="card-header bg-blue text-white text-center ">
+                        FOR OFFICE USE INLY
+                    </div>
+                    <div class="card-body pb-0">
+                        <form class="form pb-0 " action="">
+                            <div >
+                                <label class="form-label w-25" for="formno">Form No:</label>
+                                <input class="form-control-sm inputunderborder" type="text" id="formno">
+                            </div>
+
+                            <div>
+                                <label class="form-label w-25" for="grno">G.R No:</label>
+                                <input class="form-control-sm inputunderborder" type="text" id="grno">
+                            </div>
+
+                            <div>
+                                <label class="form-label w-25" for="batch">Batch:</label>
+                                <input class="form-control-sm inputunderborder " type="text" id="batch">
+                            </div>
+                        </form>          
+                    </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- form -->
+            <form >
+                <div class="input-group d-flex flex-column flex-sm-row">
+                    <label class="input-group-text " for="">ADMISSION FOR REQUIRED CLASS</label>
+                    <input class="form-control w-auto w-sm-100" type="text" placeholder=" Enter">
+                </div>
+            </form>
+
+            <!-- second section -->
+            <section >
+                <div class="card  border-dark">
+                    <div class="card-header row px-0 m-0 bg-blue">
+
+                            <h5 class=" col m-0 p-0 text-center text-white ">OPTIONAL SUBJECTS</h5>
+                        
+
+
+                            <h5 class="col m-0 p-0 text-center text-white ">COMPULSORY SUBJECTS</h5>
+                        
+
+                    </div>
+                    <div class="card-body row d-flex  ">
+                        <div class="col custom-3grid ">
+                            <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="computer">
+                                <label class="form-check-label">Computer</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Accounting">
+                                <label class="form-check-label">Accounting</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Banking">
+                                <label class="form-check-label">Banking</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Biology">
+                                <label class="form-check-label">Biology</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Economics">
+                                <label class="form-check-label">Economics</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="CG">
+                                <label class="form-check-label">CG</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Physics">
+                                <label class="form-check-label">Physics</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Mathematics">
+                                <label class="form-check-label">Mathematics</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Others">
+                                <label class="form-check-label">Others</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Chemestry">
+                                <label class="form-check-label">Chemestry</label>
+                            </div>
+                                                    <div class="form-check">
+                                <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="POC">
+                                <label class="form-check-label">POC</label>
+                            </div>
+                        
+                        </div>
+
+                        <div class="col ">
+                                <div class="row ">
+                                    <div class="col ">
+                                        <div class="form-check">
+                                            <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="English">
+                                            <label class="form-check-label">English</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Nepali">
+                                            <label class="form-check-label">Nepali</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Newari">
+                                            <label class="form-check-label">Newari</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Hindi">
+                                            <label class="form-check-label">Hindi</label>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="computer">
+                                        <label class="form-check-label">Computer</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input border-dark" type="checkbox" id="checkcomputer" name="Others">
+                                        <label class="form-check-label">Others</label>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                       
+                    </div>
+
+
+                </div>
+
+            </section>
+            
+            <!-- final sectio -->
+            <section class="input-dark my-3" >
+
+                    <div class="card border-dark">
+                        <div class="card-body  ">
+                            <label>
+                                Please complete the form in BLOCK LETTER, one letter per box
+                            </label>
+                            <h1>STUDENT'S PERSONAL PROFILE</h1>
+
+
+                            <div class="row d-flex flex-wrap-reverse g-5">
+                                <div class="col-12 col-md-8 col-lg-9 col-xl-9 pe-0">
+
+                                    <div class="row  ">
+                                        <div class="col">
+                                            <label class="input-text" for=""> <strong>STUDENT'S</strong> FIRST NAME</label>
+                                            <input class="form-control" type="text" placeholder="First Name" id="fname">
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <label class="input-text" for="">MIDDLE NAME</label>
+                                            <input class="form-control" type="text" placeholder="Middle Name" id="mname">
+                                        </div>
+
+                                        <div class="col">
+                                            <label class="input-text" for="">LAST NAME</label>
+                                            <input class="form-control" type="text" placeholder="Last Name" id="lname">
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="row pt-1">
+                                        <div class="col">
+                                            <label class="input-text" for=""><strong>FATHER'S </strong> FIRST NAME</label>
+                                            <input class="form-control" type="text" placeholder="First Name" id="fname">
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <label class="input-text" for="">MIDDLE NAME</label>
+                                            <input class="form-control" type="text" placeholder="Middle Name" id="mname">
+                                        </div>
+
+                                        <div class="col">
+                                            <label class="input-text" for="">LAST NAME</label>
+                                            <input class="form-control" type="text" placeholder="Last Name" id="lname">
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="pt-1" >
+                                        <label class="input-text" for="focc">FATHERS'S OCCUPATION</label>
+                                        <input class="form-control" type="text" placeholder="Occupation" id="focc" name="focc">
+                                    </div>                           
+
+                                </div>
+
+                                <div class="col-12 col-md-4 col-lg-3 col-xl-3 rightside px-0" >
+                                    <div class="w-lg-75"
+                                     name="image" 
+                                     placeholder=" place your photo " 
+                                     rows="8" disabled
+                                     style="width: 200px;
+                                     " >
+                                        gasvduaskdvaih
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <div class="row">
+                                    <div class="col-5" >
+                                        <label class="input-text" for="dob">DATE OF BIRTH</label>
+                                        <input class="form-control" type="date" placeholder="DOB" id="dob" name="dob">
+                                    </div>
+
+                                <div class="col-7" >
+                                    <label class="input-text" for="cnic">STUDENT CNIC/B-FORM</label>
+                                    <input class="form-control" type="text" placeholder="CNIC" id="cnic" name="cnic">
+                                </div>
+
+                                </div>
+
+                                <div >
+                                    <label class="input-text" for="colname">STUDENT COLLEGE NAME</label>
+                                    <input class="form-control" type="text" placeholder="College name" id="colname" name="colname">
+                                </div>
+
+                                <div >
+                                    <label class="input-text" for="focc">BOARD</label>
+                                    <input class="form-control" type="text" placeholder="Board" id="board" name="board">
+                                </div>
+
+                                <div class="d-grid gap-1" >
+                                    <label class="input-text" for="focc">ADDRESS</label>
+                                    <input class="form-control" type="text" placeholder="" id="addr" name="addr">
+                                    <input class="form-control" type="text" placeholder="" id="addr" name="addr">
+                                    
+                                </div>
+                                
+                                <diV class="row">
+                                    <div class="col-4">
+                                        <label class="input-text" for="fnum">FATHER'S NUMBER</label>
+                                        <input class="form-control" type="text" placeholder="" id="fnum" name="fnum">
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label class="input-text" for="mnum">MOTHER'S NUMBER</label>
+                                        <input class="form-control" type="text" placeholder="" id="mnum" name="mnum">
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label class="input-text" for="pnum">PERSONAL NUMBER</label>
+                                        <input class="form-control" type="text" placeholder="" id="pnum" name="pnum">
+                                    </div>
+
+                                </diV>
+
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label class="input-text" for="enum">EMERGENCY NUMBER</label>
+                                        <input class="form-control" type="text" placeholder="" id="enum" name="enum">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="input-text" for="email">EMAIL </label>
+                                    <input class="form-control" type="text" placeholder="" id="email" name="email">
+                                </div>
+
+                                <div>
+                                    <label class="input-text" for="sibnc">SIBLING'S NAME & CLASS</label>
+                                    <input class="form-control" type="text" placeholder="" id="sibnc" name="sibnc">
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+            </section>
+
+
+
+
+
+        </div>
+    </form>
+
+
+
+
+
+    <footer class="mt-5">
+            <div class="container"> 
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="bootstraptable.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="form.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

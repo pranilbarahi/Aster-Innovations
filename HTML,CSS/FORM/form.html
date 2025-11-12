@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>
+        form
+    </title>
+</head>
+<body style="background-color: rgba(199, 188, 188, 0.258) ;">
+    <form 
+    action="#" 
+    method="post" 
+    style="display: flex; 
+    justify-content: center ;; 
+    margin-top: 40px;
+    "
+    >
+ 
+        <fieldset style="  background-color:white; 
+        border-color: transparent; 
+        border-radius: 10px; 
+        max-width: 450px;
+        padding-right: 30px;
+        padding-left: 20px;
+        padding-bottom: 50px;">
+               <legend style="text-align: center; font-size: larger; font-weight: 600;">Random Form</legend>
+            
+            <label for="email">Email Address</label><br>
+            <input 
+            class="full type"
+            type="email" 
+            id="email" 
+            email="email" 
+            required>
+            <span> !INVALID EMAIL ADDRESS</span>
+            <br>
+
+            <label for="text">Full Name</label><br>
+            <div class="container">
+                <div class="r2grid">
+                <div>
+                    <input type="text"
+                    class="full type"
+                    id="fname"
+                    Name="fname" 
+                    placeholder="First Name" 
+                    pattern="^[A-Za-z]{8,20}$"
+                    required>
+                    <span> First Name is invalid</span>
+                </div> 
+                <div>       
+                    <input 
+                    class="full type"
+                    type="text" 
+                    id="lname" 
+                    Name="lname"  
+                    placeholder="Last Name" 
+                    pattern="^[A-Za-z]{8,20}$"
+                    required>
+                    <span> Last Name is invalid</span>
+                </div>
+                </div>
+            </div>
+
+            <label for="Address">Address</label><br>
+            <input
+            class="full type" 
+            type="text" 
+            id="text" 
+            text="text"  
+            placeholder="Street address" 
+            required
+            style="margin-bottom: 10px;"
+            pattern="^[A-Za-z]"
+            > 
+
+            <input
+            class="full type" 
+            type="text" 
+            id="text" 
+            text="email"  
+            placeholder="Office" 
+            required
+            style="margin-bottom: 15px;">
+            
+            
+        <div class="container">
+            <div class="r3grid">   
+                <div>
+                    <label for="city">City</label>
+                    <input
+                    class="type "
+                    type="address" 
+                    id="address" 
+                    address="address" 
+                    required>
+                </div>
+                <div>
+                    <label for="city">State</label> 
+                    <select 
+                    title="select state" 
+                    style="border-radius: 5px;
+                    border: solid 2px;
+                    border-color: rgb(221, 220, 220);
+                    height: 25px;">
+
+                        <option disabled selected>Choose a state</option>
+                        <option value="">patan</option>
+                        <option value="">lalitpur</option>
+                        <option value="">KTM</option>
+                    
+                    </select>
+                </div>
+                <div>
+                    <label for="city" >Zip</label> 
+                    <input 
+                    class="type"
+                    type="address"
+                    id="address" 
+                    address="address" 
+                    required>
+                </div>
+            </div>
+            <p 
+            style="font-size: 10px; 
+            font-weight: bold; 
+            color: gray;">
+            ENCRYPTED AND SECURED
+            </p>
+        </div>
+        <div>
+            <label for="text">Payment details</label><br>
+            <input 
+            class="full type"
+            type="text" 
+            id="payment" 
+            name="payment" 
+            placeholder="🔒  0000 0000 0000 0000     MM/YY     CVV     ZIP"
+            style="margin-bottom: 10px;">
+
+
+            <label for="text"> What radio technologies are you using?</label> 
+        <div class="r4grid" style="margin-bottom: 15px;">
+            <div><input type="checkbox" id="" name="" ><label>2G</label></div>
+            <div><input type="checkbox" id="" name="" ><label>3G</label></div>
+            <div><input type="checkbox" id="" name="" ><label>4G LTE</label></div>
+            <div><input type="checkbox" id="" name="" ><label>CAT-M</label></div>
+        </div>        
+
+            <label for="text">How much data do you expect to use each month?</label> 
+            <br>
+        <div class="container" style="margin-bottom: 15px;">  
+            <div class="r4grid">
+                <div>
+                    <input  type="radio" id="" name="" >
+                    <label>0-50 MB</label>
+                </div>
+                <div>    
+                    <input type="radio" id="" name="" >
+                    <label>50-250 MB</label>
+                </div>
+                <div>
+                    <input type="radio" id="" name="" >
+                    <label>250 MB -1 GB</label>
+                </div>
+                <div>    
+                    <input type="radio" id="" name="" disabled>
+                    <label style="color: gray;" >1GB+</label>
+                </div>
+            </div>
+        </div>
+
+            <label for="text">Prmom code</label><br>
+            <input 
+            class="full type"
+            type="text" 
+            id="Pcode" 
+            name="Pcode" 
+            required
+            style="margin-bottom: 20px;">
+            
+            <input type="checkbox" id="" name="" disabled>
+            <label style="color: gray;" > Sign me up for annoying offers</label> 
+            
+
+            <button 
+            style=" margin-left:50px ; 
+            background-color: rgb(31, 91, 222); 
+            color: white;
+            border-radius: 5px;
+            border-color: transparent;
+            width: 100px;
+            height: 35px;
+            float: right;            "
+            >
+            Place order
+            </button>
+
+        </fieldset>
+
+
+
+
+    </form>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>

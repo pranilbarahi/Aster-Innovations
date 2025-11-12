@@ -1,0 +1,32 @@
+.anodec{
+    text-decoration:none;
+    color: rgb(14, 14, 15);
+    font-size: 2vw;
+
+
+}
+
+.navfont{
+        font-size: 1vw;
+}
+
+
+.background{
+ 
+    background-image: url(https://www.goodfreephotos.com/albums/other-landscapes/mountains-and-pond-landscape-with-majestic-scenery.jpg);
+    height:800px ;
+}
+
+
+
+body{
+    background-color: rgb(219, 218, 217);
+}
+
+label{
+    display: none;
+}
+
+button:focus + label{
+    display: block;
+}

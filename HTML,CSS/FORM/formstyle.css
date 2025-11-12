@@ -1,0 +1,63 @@
+span {
+
+font-size: 15px;
+    color: transparent;
+    font-size: medium;
+    
+}
+
+input:user-invalid:focus ~ span,
+input:user-invalid:not(:focus) ~ span {
+    color: red;
+}
+
+
+
+label{
+    font-size: small;
+}
+input.full{
+    width: 100%; 
+
+}
+
+input.type{
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: rgb(221, 220, 220);
+    height: 25px;
+}
+
+
+
+.container{
+    width: auto;
+
+
+}
+
+
+.r2grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.r3grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    max-width: 466px;
+}
+
+.r4grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+select{
+    background-color: white;
+    border-color: rgb(189, 180, 180);
+    border-radius: 5px;
+    height: 25px;
+}
+
